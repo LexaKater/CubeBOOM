@@ -301,7 +301,6 @@ GameObject:
   - component: {fileID: 479197332}
   - component: {fileID: 479197333}
   - component: {fileID: 479197334}
-  - component: {fileID: 479197335}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -435,6 +434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _click: {fileID: 479197333}
+  _chancer: {fileID: 1499894245}
 --- !u!114 &479197333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -462,19 +462,6 @@ MonoBehaviour:
   _explosionForce: 5
   _click: {fileID: 479197333}
   _effect: {fileID: 74078499623404260, guid: 9790383d97594f049aecba8cf470e3b7, type: 3}
---- !u!114 &479197335
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 479197326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6915ee9aefdeb849a555c92e8c67a52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _maxPercent: 100
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -756,6 +743,7 @@ GameObject:
   - component: {fileID: 1499894239}
   - component: {fileID: 1499894244}
   - component: {fileID: 1499894243}
+  - component: {fileID: 1499894245}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -898,6 +886,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1499894245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499894238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87b3cab03ef97b041ac1c72a10aaf7a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubeCreator:
+  - {fileID: 479197332}
+  - {fileID: 1587609569}
+  Percent: 100
 --- !u!1 &1581673693
 GameObject:
   m_ObjectHideFlags: 0
@@ -995,7 +999,6 @@ GameObject:
   - component: {fileID: 1587609569}
   - component: {fileID: 1587609570}
   - component: {fileID: 1587609571}
-  - component: {fileID: 1587609572}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -1129,6 +1132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _click: {fileID: 1587609570}
+  _chancer: {fileID: 1499894245}
 --- !u!114 &1587609570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1156,19 +1160,6 @@ MonoBehaviour:
   _explosionForce: 5
   _click: {fileID: 1587609570}
   _effect: {fileID: 74078499623404260, guid: 9790383d97594f049aecba8cf470e3b7, type: 3}
---- !u!114 &1587609572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1587609563}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6915ee9aefdeb849a555c92e8c67a52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _maxPercent: 100
 --- !u!1 &1637624149
 GameObject:
   m_ObjectHideFlags: 0
