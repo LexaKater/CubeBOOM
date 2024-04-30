@@ -298,9 +298,8 @@ GameObject:
   - component: {fileID: 479197329}
   - component: {fileID: 479197328}
   - component: {fileID: 479197327}
-  - component: {fileID: 479197332}
   - component: {fileID: 479197333}
-  - component: {fileID: 479197334}
+  - component: {fileID: 479197335}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -421,20 +420,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &479197332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 479197326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19841e9fad8f4c54db13b42e4c013c0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _click: {fileID: 479197333}
-  _chancer: {fileID: 1499894245}
 --- !u!114 &479197333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -447,7 +432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d59f1ed40e0516e4d89e308a2e5ca324, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &479197334
+--- !u!114 &479197335
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -456,12 +441,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 479197326}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d85335ae94f1a7b4fb808c52fef3a76a, type: 3}
+  m_Script: {fileID: 11500000, guid: 54302d3c40890194b879e58085454cc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explosionForce: 5
   _click: {fileID: 479197333}
-  _effect: {fileID: 74078499623404260, guid: 9790383d97594f049aecba8cf470e3b7, type: 3}
+  _creator: {fileID: 1499894245}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -743,6 +727,7 @@ GameObject:
   - component: {fileID: 1499894239}
   - component: {fileID: 1499894244}
   - component: {fileID: 1499894243}
+  - component: {fileID: 1499894246}
   - component: {fileID: 1499894245}
   m_Layer: 0
   m_Name: Ground
@@ -895,13 +880,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1499894238}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87b3cab03ef97b041ac1c72a10aaf7a2, type: 3}
+  m_Script: {fileID: 11500000, guid: 19841e9fad8f4c54db13b42e4c013c0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cubeCreator:
-  - {fileID: 479197332}
-  - {fileID: 1587609569}
-  Percent: 100
+  _explode: {fileID: 1499894246}
+--- !u!114 &1499894246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499894238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d85335ae94f1a7b4fb808c52fef3a76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _explosionForce: {x: 10, y: 10, z: 10}
+  _effect: {fileID: 74078499623404260, guid: 9790383d97594f049aecba8cf470e3b7, type: 3}
 --- !u!1 &1581673693
 GameObject:
   m_ObjectHideFlags: 0
@@ -996,9 +992,8 @@ GameObject:
   - component: {fileID: 1587609566}
   - component: {fileID: 1587609565}
   - component: {fileID: 1587609564}
-  - component: {fileID: 1587609569}
   - component: {fileID: 1587609570}
-  - component: {fileID: 1587609571}
+  - component: {fileID: 1587609572}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -1119,20 +1114,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1587609569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1587609563}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19841e9fad8f4c54db13b42e4c013c0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _click: {fileID: 1587609570}
-  _chancer: {fileID: 1499894245}
 --- !u!114 &1587609570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1145,7 +1126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d59f1ed40e0516e4d89e308a2e5ca324, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1587609571
+--- !u!114 &1587609572
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1154,12 +1135,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1587609563}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d85335ae94f1a7b4fb808c52fef3a76a, type: 3}
+  m_Script: {fileID: 11500000, guid: 54302d3c40890194b879e58085454cc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explosionForce: 5
   _click: {fileID: 1587609570}
-  _effect: {fileID: 74078499623404260, guid: 9790383d97594f049aecba8cf470e3b7, type: 3}
+  _creator: {fileID: 1499894245}
 --- !u!1 &1637624149
 GameObject:
   m_ObjectHideFlags: 0
@@ -1201,7 +1181,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 963194228}
   - {fileID: 705507995}
-  - {fileID: 1499894242}
   - {fileID: 1637624150}
+  - {fileID: 1499894242}
   - {fileID: 479197331}
   - {fileID: 1587609568}
