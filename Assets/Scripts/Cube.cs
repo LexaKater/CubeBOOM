@@ -36,8 +36,6 @@ public class Cube : MonoBehaviour
         if (percentForDivision <= _percentForDevide)
         {
             _percentForDevide /= _devider;
-            Debug.Log(_percentForDevide);
-
             _creator.Create(this.gameObject.GetComponent<Cube>(), _percentForDevide);
         }
 
